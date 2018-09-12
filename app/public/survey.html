@@ -144,5 +144,38 @@
             <p><a href="#">API Friends List</a> | <a href="#">GitHub Repo</a></p>
         </div>
     </footer>   
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function() {
+
+        function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function() {
+                if ($(this).val() === "") {
+                    isValid = false;
+                };
+            });
+            return isValid;
+        };
+
+        if (validateForm()) {
+            var userData = {
+                name: $("#q1").val(),
+                name: $("#q2").val(),
+                name: $("#q3").val(),
+                name: $("#q4").val(),
+                name: $("#q5").val(),
+                name: $("#q6").val(),
+                name: $("#q7").val(),
+                name: $("#q8").val(),
+                name: $("#q9").val(),
+                name: $("#q10").val(),
+            }
+        }
+    })
+
+</script>
+
 </body>
 </html>
