@@ -13,16 +13,12 @@ module.exports = function(app) {
             friendDifference: 1000
         };
 
-        console.log(req,body);
-
         var userData = req.body;
         var userScores = userData.scores;
 
-        console.log(userScores);
-
         var totalDifference = 0;
 
-        for (var i = 0; 1 < friends.length; i++) {
+        for (var i = 0; i < friends.length; i++) {
 
             console.log(friends[i]);
             totalDifference = 0;
@@ -31,7 +27,7 @@ module.exports = function(app) {
 
                 totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 
-                if (totalDifference <= best.Match.friendDifference) {
+                if (totalDifference <= bestMatch.friendDifference) {
 
                     bestMatch.name = friends[i].name;
                     bestMatch.photo = friends[i].photo;
