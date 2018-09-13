@@ -84,14 +84,14 @@ var friends = [
     name: "Gregruary Gortextilestiltskin",
     photo: "https://i.pinimg.com/236x/55/77/67/5577679e3b41c59cd8ea60c483e0be70--boy-scouts-facial-hair.jpg",
     scores: [
-        "5",
         "4",
-        "3",
-        "2",
-        "1",
-        "5",
         "4",
-        "3",
+        "4",
+        "4",
+        "4",
+        "4",
+        "4",
+        "4",
         "2",
         "1"
       ]
